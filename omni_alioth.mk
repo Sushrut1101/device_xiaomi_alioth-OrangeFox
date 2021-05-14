@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2020 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -8,14 +6,14 @@
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := twrp_alioth
+PRODUCT_NAME := omni_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_BRAND := POCO
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := POCO F3
+PRODUCT_MODEL := POCO F3 / Redmi K40 / Mi 11X
 TARGET_SCREEN_DENSITY:=450
 
 
