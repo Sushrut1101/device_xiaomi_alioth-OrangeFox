@@ -1,13 +1,11 @@
 #
-# Copyright (C) 2020 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_alioth.mk
+    $(LOCAL_DIR)/omni_alioth.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_alioth-user \
-    twrp_alioth-userdebug \
-    twrp_alioth-eng
+    omni_alioth-user \
+    omni_alioth-userdebug \
+    omni_alioth-eng
