@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2020 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -8,7 +6,7 @@
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 #$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
 
-PRODUCT_SHIPPING_API_LEVEL := 30
+#PRODUCT_SHIPPING_API_LEVEL := 30
 
 #Audio
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/alioth/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -57,8 +55,6 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1200
-TW_Y_OFFSET := 91
-TW_H_OFFSET := -91
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
